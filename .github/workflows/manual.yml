@@ -5,6 +5,14 @@ name: update euro-cordex simulation list
 # Controls when the action will run. Workflow runs when manually triggered using the UI
 # or API.
 on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Test scenario tags'  
   schedule:
   - cron: "0 0 * * *"
 
