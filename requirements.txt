@@ -1,4 +1,5 @@
 git+https://github.com/euro-cordex/py-cordex.git
+requests_cache==0.5.2
 esgf-pyclient
 openpyxl
 tqdm
