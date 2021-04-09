@@ -1,1 +1,1 @@
-[![pipeline status](http://git.gerics.de/Lars.Buntemeyer/schedule-test/badges/master/pipeline.svg)](http://git.gerics.de/Lars.Buntemeyer/schedule-test/commits/master)
+# esgf-crawler
