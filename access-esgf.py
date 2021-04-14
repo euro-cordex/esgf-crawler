@@ -3,7 +3,7 @@ from cordex import esgf_access
 import pandas as pd
 
 # Euro-Cordex search attributes
-attrs = {'project':'CORDEX', 'domain':'EUR-11', 'rcm_name': 'GERICS-REMO2015'}
+attrs = {'project':'CORDEX', 'domain':'EUR-11'}
 
 # create a datasets search result object
 results = esgf_access.datasets(attrs, verbose=True)
