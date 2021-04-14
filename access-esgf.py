@@ -14,7 +14,8 @@ print(df)
 df.to_csv('euro-cordex-esgf.csv', index=False)
 
 # regroup dataframe for excel output
-cordex_list = df.groupby(['institute', 'model_id', 'driving_model_id', 'experiment_id', 'member', 'frequency', 'date', 'host', 'domain'])['variable'].apply(list)
+cordex_list = df.groupby(['institute', 'model_id', 'driving_model_id', 'experiment_id', 
+                          'member', 'frequency', 'date', 'host', 'domain'])['variable'].apply(list).to_frame()
 print(cordex_list)
 
 cordex_list.to_excel('euro-cordex-esgf.xlsx')
