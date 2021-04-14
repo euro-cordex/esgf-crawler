@@ -30,6 +30,8 @@ jobs:
     - name: install requirements
       run: pip install -r requirements.txt
     - name: update tables
+      env:
+        WANDB_CONSOLE: "off"
       run: python access-esgf.py
     - name: pushes results to table repository
       env:
