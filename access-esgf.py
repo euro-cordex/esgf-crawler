@@ -19,5 +19,3 @@ cordex_list = df.groupby(['institute', 'model_id', 'driving_model_id', 'experime
 print(cordex_list)
 
 cordex_list.to_excel('euro-cordex-esgf.xlsx')
-
-
